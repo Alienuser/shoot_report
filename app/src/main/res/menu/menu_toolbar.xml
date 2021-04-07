@@ -23,7 +23,6 @@
         android:actionLayout="@layout/toolbar"
         android:orderInCategory="300"
         android:title="@string/topMenuExportTraining"
-        android:visible="false"
         app:showAsAction="never" />
 
     <item
@@ -31,7 +30,6 @@
         android:actionLayout="@layout/toolbar"
         android:orderInCategory="400"
         android:title="@string/topMenuExportCompetition"
-        android:visible="false"
         app:showAsAction="never" />
 
     <item

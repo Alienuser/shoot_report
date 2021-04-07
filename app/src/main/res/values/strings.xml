@@ -83,7 +83,6 @@
     <string name="activityDetails_ImageError">Image could not be loaded.</string>
     <string name="activityDetails_InputCount">Number of shots</string>
     <string name="activityDetails_ButtonSave">Save</string>
-    <string name="activityDetails_InfoQR">Here you can scan your result via QR code in the future.</string>
     <string name="activityDetails_ChooseImageLocation">How do you want to take the photo?</string>
     <string name="activityDetails_SaveSuccess">Successfully saved.</string>
     <string name="activityDetails_DeleteMessage">Sure to delete the picture?</string>
@@ -184,7 +183,7 @@
     <string name="fragmentInformation_WebsiteValue" translatable="false">www.burkhardt-sport.solutions</string>
     <string name="fragmentInformation_TitleVersion">Information about the version</string>
     <string name="fragmentInformation_VersionTitle">Version</string>
-    <string name="fragmentInformation_VersionValue" translatable="false">1.3 Release</string>
+    <string name="fragmentInformation_VersionValue" translatable="false">1.4 Release</string>
     <string name="fragmentInformation_BuildTitle" translatable="false">Build</string>
     <string name="fragmentInformation_BuildValue" translatable="false">20210406</string>
     <string name="fragmentInformation_TitleSource">Sources</string>

@@ -77,7 +77,6 @@
     <string name="activityDetails_ImageError">Bild konnte nicht geladen werden.</string>
     <string name="activityDetails_InputCount">Anzahl Schüsse</string>
     <string name="activityDetails_ButtonSave">Speichern</string>
-    <string name="activityDetails_InfoQR">Hier kannst du in Zukunft dein Ergebnis über QR-Code scannen.</string>
     <string name="activityDetails_ChooseImageLocation">Wie möchtest du das Bild aufnehmen?</string>
     <string name="activityDetails_DeleteMessage">Möchtest du das Bild wirklich löschen?</string>
     <string name="activityDetails_SaveSuccess">Erfolgreich gespeichert.</string>

@@ -6,6 +6,20 @@ import androidx.sqlite.db.SupportSQLiteDatabase
 object HelperDatabaseMigration {
 
     /**
+     * Migration of the database from version 2 to 3.
+     */
+    val MIGRATION_2_3 = object : Migration(2, 3) {
+        override fun migrate(database: SupportSQLiteDatabase) {
+
+            // Modify the competition table
+            database.execSQL("ALTER TABLE competition_table RENAME TO competition_table_old")
+            database.execSQL("CREATE TABLE IF NOT EXISTS competition_table (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `date` INTEGER NOT NULL, `place` TEXT NOT NULL, `kind` TEXT NOT NULL, `shoot_count` INTEGER NOT NULL, `shoots` TEXT NOT NULL, `image` TEXT NOT NULL, `report` TEXT NOT NULL, `rifleId` INTEGER NOT NULL)")
+            database.execSQL("INSERT INTO competition_table (date, place, kind, shoot_count, shoots, image, report, rifleId) SELECT date, place, kind, 60, shoots, '', report, rifleId FROM competition_table_old;")
+            database.execSQL("DROP Table competition_table_old")
+        }
+    }
+
+    /**
      * Migration of the database from version 1 to 2.
      */
     val MIGRATION_1_2 = object : Migration(1, 2) {
